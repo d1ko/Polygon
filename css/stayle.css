@@ -197,14 +197,153 @@ header.sticky{
 
 
 
-
-
-
-
-@media (max-width:1680px) {
-
+.humbuurger_menu{
+  display: none;
+  left: 750px;
+  top: 35px;
+  /* vertical-align: top; */
+}
+@media (max-width:450px) {
+  .humbuurger_menu{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .humbuurger_menu:before,
+  .humbuurger_menu:after{
+    content: '';
+    background-color: #576574;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .humbuurger_menu:before{
+    top: 0px;
+  }
+  .humbuurger_menu:after{
+    bottom: 0px;
+  }
+  .humbuurger_menu span{
+    position: absolute;
+    background-color: #576574;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .yuit{
+    top: 200px;
+    /* margin-top: 100px; */
+    /* margin-left: 100px; */
+    /* left: -1000px; */
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    height: 900%;
+    /* font-size: 200px; */
+    /* align-items: center; */
+  }
+  .hei{
+    margin-left: -1200px;
+    margin-top: 100px;
+  }
+  .dropdown-content{
+    z-index: 30;
+  }
+}
+.polinio{
+  position: relative;
+  top: 100px;
+  left: -0px;
+  text-align: center;
+  font-family: "MicrobrewSoftOne";
+  text-shadow: 1px 1px #333;
+  display: block;
+  word-spacing: normal;
+  font-weight: bolder;
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-size: 60px;
+  color: white;
 }
 
+@media (max-width:450px) {
+  .fool_div{
+    position: absolute;
+    top: 162px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  	background-position: 80%;
+    /* background-size: 100px 200px; */
+    /* background-size: 50% auto; */
+    /* background-size: contain; */
+    left: 3px;
+    width: 1667px;
+    height: 300px;
+    /* background-color: red; */
+  }
+}
+@media (max-width:450px) {
+  .fool_div__2{
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+  	background-position: 30%;
+    margin-top: 779px;
+    margin-left: -555px;
+    /* top: 1465px; */
+    left: 0px;
+    width: 1667px;
+    height: 300px;
+    /* background-color: red; */
+  }
+  .gor__p{
+    position: absolute;
+    margin-top: 1900px;
+    width: 1673px;
+    height: 500px;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+  	background-position: 0%;
+    left: 3px;
+    top: 942px;
+    background-color: black;
+  }
+  .fool_div__3{
+    position: absolute;
+    margin-top: 1560px;
+    margin-left: -1118px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  	background-position: 10%;
+    top: 162px;
+    left: 1123px;
+    width: 1667px;
+    height: 777px;
+    /* background-color: red; */
+  }
+  .priw {
+    position: absolute;
+    margin-left: 1200px;
+    left: 1000px;
+  }
+  .tol{
+    position: relative;
+    top: 300px;
+    text-align: center;
+    font-family: "MicrobrewSoftOne";
+    text-shadow: 1px 1px #333;
+    display: block;
+    word-spacing: normal;
+    font-weight: bolder;
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-size: 60px;
+    color: white;
+  }
+}
 
 
 
@@ -221,7 +360,7 @@ header.sticky{
   /* background-size: 50% auto; */
   /* background-size: contain; */
   left: 3px;
-  width: 553px;
+  min-width: 553px;
   height: 777px;
   /* background-color: red; */
 }
@@ -233,7 +372,7 @@ header.sticky{
 	background-position: 30%;
   top: 162px;
   left: 559px;
-  width: 560px;
+  min-width: 560px;
   height: 777px;
   /* background-color: red; */
 }
@@ -245,7 +384,7 @@ header.sticky{
 	background-position: 10%;
   top: 162px;
   left: 1123px;
-  width: 553px;
+  min-width: 553px;
   height: 777px;
   /* background-color: red; */
 }
@@ -284,7 +423,7 @@ header.sticky{
   left: 180px;
   top: 370px;
   justify-content: center;
-  width: 160px;
+  min-width: 160px;
   height: 50px;
   outline: none;
   display: inline-block;
@@ -377,3 +516,4 @@ header.sticky{
   top: 942px;
   background-color: black;
 }
+
